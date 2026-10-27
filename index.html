@@ -42,6 +42,28 @@ h1{font-size:1.4rem;text-align:center;margin:6px 0 2px;overflow-wrap:anywhere}
 .char.tier8 .tiertitle{color:#ff8fd6}
 .char.tier9{background:linear-gradient(160deg,#7a5c0f,#4a1f66,#2a2348)}
 .char.tier9 .tiertitle{color:#ffe27a}
+.char.tier10{background:linear-gradient(160deg,#244b72,#2a2348)}
+.char.tier10 .tiertitle{color:#a8dcff}
+.char.tier11{background:linear-gradient(160deg,#785022,#2a2348)}
+.char.tier11 .tiertitle{color:#ffca7d}
+.char.tier12{background:linear-gradient(160deg,#1e6049,#2a2348)}
+.char.tier12 .tiertitle{color:#97f5c6}
+.char.tier13{background:linear-gradient(160deg,#593080,#2a2348)}
+.char.tier13 .tiertitle{color:#d8b2ff}
+.char.tier14{background:linear-gradient(160deg,#145d72,#2a2348)}
+.char.tier14 .tiertitle{color:#a5efff}
+.char.tier15{background:linear-gradient(160deg,#732b3a,#2a2348)}
+.char.tier15 .tiertitle{color:#ffb5ab}
+.char.tier16{background:linear-gradient(160deg,#303e8d,#2a2348)}
+.char.tier16 .tiertitle{color:#b5c9ff}
+.char.tier17{background:linear-gradient(160deg,#126659,#2a2348)}
+.char.tier17 .tiertitle{color:#86ead5}
+.char.tier18{background:linear-gradient(160deg,#5d5f23,#2a2348)}
+.char.tier18 .tiertitle{color:#f6eba3}
+.char.tier19{background:linear-gradient(160deg,#703579,#2a2348)}
+.char.tier19 .tiertitle{color:#ffb7f1}
+.char.tier20{background:linear-gradient(160deg,#456779,#4e347e,#2a2348)}
+.char.tier20 .tiertitle{color:#fff0b3}
 @media (prefers-color-scheme:light){
   :root:not([data-theme="dark"]) .char.tier2{background:linear-gradient(160deg,#cfe6ff,#fff)}
   :root:not([data-theme="dark"]) .char.tier3{background:linear-gradient(160deg,#d1f2dc,#fff)}
@@ -51,6 +73,17 @@ h1{font-size:1.4rem;text-align:center;margin:6px 0 2px;overflow-wrap:anywhere}
   :root:not([data-theme="dark"]) .char.tier7{background:linear-gradient(160deg,#c9f3f0,#fff)}
   :root:not([data-theme="dark"]) .char.tier8{background:linear-gradient(160deg,#ffd0ec,#fff)}
   :root:not([data-theme="dark"]) .char.tier9{background:linear-gradient(160deg,#fff0b3,#e3d0ff)}
+  :root:not([data-theme="dark"]) .char.tier10{background:linear-gradient(160deg,#d4eaff,#fff)}
+  :root:not([data-theme="dark"]) .char.tier11{background:linear-gradient(160deg,#ffdfb3,#fff)}
+  :root:not([data-theme="dark"]) .char.tier12{background:linear-gradient(160deg,#cef6dc,#fff)}
+  :root:not([data-theme="dark"]) .char.tier13{background:linear-gradient(160deg,#ecdbff,#fff)}
+  :root:not([data-theme="dark"]) .char.tier14{background:linear-gradient(160deg,#cff5ff,#fff)}
+  :root:not([data-theme="dark"]) .char.tier15{background:linear-gradient(160deg,#ffdbd4,#fff)}
+  :root:not([data-theme="dark"]) .char.tier16{background:linear-gradient(160deg,#dbe0ff,#fff)}
+  :root:not([data-theme="dark"]) .char.tier17{background:linear-gradient(160deg,#cbf5e8,#fff)}
+  :root:not([data-theme="dark"]) .char.tier18{background:linear-gradient(160deg,#eef2bf,#fff)}
+  :root:not([data-theme="dark"]) .char.tier19{background:linear-gradient(160deg,#f7d8f6,#fff)}
+  :root:not([data-theme="dark"]) .char.tier20{background:linear-gradient(160deg,#fff1c9,#d9e8ff)}
 }
 .barbg{background:var(--bar);border-radius:8px;height:10px;margin:8px 0 4px;overflow:hidden}
 .fill{height:100%;background:linear-gradient(90deg,var(--accent2),var(--accent));transition:width .3s}
@@ -202,7 +235,18 @@ var TIERS=[
   {min:6,title:'Hero',cls:'tier6'},
   {min:7,title:'Legend',cls:'tier7'},
   {min:8,title:'Mythic',cls:'tier8'},
-  {min:9,title:'Ascended',cls:'tier9'}
+  {min:9,title:'Ascended',cls:'tier9'},
+  {min:10,title:'Exalted',cls:'tier10'},
+  {min:11,title:'Paragon',cls:'tier11'},
+  {min:12,title:'Sovereign',cls:'tier12'},
+  {min:13,title:'Eternal',cls:'tier13'},
+  {min:14,title:'Celestial',cls:'tier14'},
+  {min:15,title:'Immortal',cls:'tier15'},
+  {min:16,title:'Starforged',cls:'tier16'},
+  {min:17,title:'Runelord',cls:'tier17'},
+  {min:18,title:'Worldshaper',cls:'tier18'},
+  {min:19,title:'Transcendent',cls:'tier19'},
+  {min:20,title:'Mythweaver',cls:'tier20'}
 ];
 function tierFor(level){
   var t=TIERS[0];
